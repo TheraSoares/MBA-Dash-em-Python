@@ -2,6 +2,7 @@ import dash
 from dash import dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
+import os
 
 df = pd.DataFrame({
     "Cidade": ["São Paulo", "Rio", "Fortaleza", "São Paulo", "Rio", "Fortaleza"],
@@ -34,5 +35,6 @@ def atualizar_grafico(cidade_selecionada):
     return fig
 
 if __name__ == '__main__':
-    app.run(port=8052,debug=True)
+    #app.run(port=8052,debug=True)
+    app.run(host="0.0.0.0",port=int(os.environ.get("PORT",8050)))
             
