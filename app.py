@@ -33,6 +33,6 @@ def atualizar_grafico(cidade_selecionada):
     fig = px.bar(df_filtrado, x="Mês", y="Vendas", title=f"Vendas em {cidade_selecionada}")
     return fig
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(port=8051,debug=True)
             
