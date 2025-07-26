@@ -34,5 +34,5 @@ def atualizar_grafico(cidade_selecionada):
     return fig
 
 if __name__ == '__main__':
-    app.run(port=8051,debug=True)
+    app.run(port=8052,debug=True)
             
